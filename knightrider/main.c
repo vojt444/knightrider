@@ -22,7 +22,6 @@ int main(void)
 	
 	ADMUX = (1<<REFS0) | (1<<MUX2) | (1<<MUX0);
 	ADCSRA |= (1<<ADEN);
-	ADCSRA = 0x80;
 	
     while (1) 
     {
