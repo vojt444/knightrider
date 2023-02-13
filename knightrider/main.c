@@ -16,7 +16,7 @@ uint16_t adc_read();
 
 int main(void)
 {
-	uint16_t delay_val = 0;
+    uint16_t delay_val = 0;
 	
     DDRD = 0xFF;
 	
