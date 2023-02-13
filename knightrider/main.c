@@ -18,7 +18,7 @@ int main(void)
 {
     uint16_t delay_val = 0;
 	
-    DDRD = 0xFF;
+	DDRD = 0xFF;
 	
 	ADMUX = (1<<REFS0) | (1<<MUX2) | (1<<MUX0);
 	ADCSRA |= (1<<ADEN);
