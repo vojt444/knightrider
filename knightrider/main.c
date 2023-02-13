@@ -16,7 +16,6 @@ uint16_t adc_read();
 
 int main(void)
 {
-	uint16_t adc_val = 0;
 	uint16_t delay_val = 0;
 	
     DDRD = 0xFF;
@@ -29,18 +28,18 @@ int main(void)
     {
 		for(uint8_t i = 0; i < 7; ++i)
 		{
-			adc_val = (0.47 * adc_read() + 20);
+			delay_val = (0.47 * adc_read() + 20);
 						
 			HighBit(PORTD, i);
-			delay_ms(adc_val);
+			delay_ms(delay_val);
 			LowBit(PORTD, i);
 		}
 		for(uint8_t i = 7; i > 0; --i)
 		{
-			adc_val = (0.47 * adc_read() + 20);
+			delay_val = (0.47 * adc_read() + 20);
 							
 			HighBit(PORTD, i);
-			delay_ms(adc_val);
+			delay_ms(delay_val);
 			LowBit(PORTD, i);
 		}
 
