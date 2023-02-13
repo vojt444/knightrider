@@ -46,12 +46,12 @@ int main(void)
     }
 }
 
-void delay_ms(unsigned int time)
+void delay_ms(unsigned int time_ms)
 {
-	while(time>0)
+	while(time_ms>0)
 	{
 		_delay_ms(1);
-		--time;
+		--time_ms;
 	}
 }
 
