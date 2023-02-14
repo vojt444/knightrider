@@ -11,7 +11,7 @@
 #include <util/delay.h>
 #include "macros.h"
 
-void delay_ms(unsigned int time);
+void delay_ms(uint16_t time);
 uint16_t adc_read();
 
 int main(void)
@@ -45,7 +45,7 @@ int main(void)
     }
 }
 
-void delay_ms(unsigned int time_ms)
+void delay_ms(uint16_t time_ms)
 {
 	while(time_ms>0)
 	{
